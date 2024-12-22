@@ -102,6 +102,6 @@ class CouponControllerTest {
         mockMvc.perform(post("/coupon/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(request)))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isBadRequest());
     }
 }

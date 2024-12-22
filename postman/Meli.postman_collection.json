@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "b8fcc07b-bc75-4379-a27f-f26ffb66b3da",
+		"name": "Meli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2011680",
+		"_collection_link": "https://winter-zodiac-192664.postman.co/workspace/Santander~a9d72f81-18b9-451a-9061-0993f627270c/collection/2011680-b8fcc07b-bc75-4379-a27f-f26ffb66b3da?action=share&source=collection_link&creator=2011680"
+	},
+	"item": [
+		{
+			"name": "coupon",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\n        \"MLA1448885331\",\n        \"MLA1448885333\",\n        \"MLA1448885343\",\n        \"MLA1448885361\",\n        \"MLA1448885373\"\n    ],\n    \"amount\": 50000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/coupon/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coupon",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
